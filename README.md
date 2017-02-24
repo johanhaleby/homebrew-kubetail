@@ -6,5 +6,6 @@ Usage:
   
   ```bash
   $ brew tap johanhaleby/kubetail
+  
   $ brew install kubetail
   ```
