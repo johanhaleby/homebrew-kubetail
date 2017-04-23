@@ -3,7 +3,8 @@ class Kubetail < Formula
   homepage "https://github.com/johanhaleby/kubetail"
   url "https://github.com/johanhaleby/kubetail/archive/1.2.1.tar.gz"
   sha256 "734d732d93c81c4e849054fc646e8c759da3bea78e2b5efef39d27494e773752"
-  
+  head "https://github.com/johanhaleby/kubetail.git"
+
   def install
     bin.install "kubetail"
   end
