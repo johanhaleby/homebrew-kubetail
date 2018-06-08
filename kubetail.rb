@@ -7,6 +7,9 @@ class Kubetail < Formula
 
   def install
     bin.install "kubetail"
+    bash_completion.install "completion/kubetail.bash"
+    zsh_completion.install "completion/kubetail.zsh" => "_kubetail"
+    fish_completion.install "completion/kubetail.fish"
   end
 
   test do
