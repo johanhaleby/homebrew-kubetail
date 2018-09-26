@@ -6,12 +6,13 @@ class Kubetail < Formula
   head "https://github.com/johanhaleby/kubetail.git"
 
   def install
-    bin.install "kubetail"
+    bin.install "kubetail" => build.with?("short-names") ? "ktail" : "kubetail"
     bash_completion.install "completion/kubetail.bash"
     zsh_completion.install "completion/kubetail.zsh" => "_kubetail"
     fish_completion.install "completion/kubetail.fish"
   end
 
   test do
+    system "which", build.with?("short-names") ? "ktail" : "kubetail"
   end
 end
