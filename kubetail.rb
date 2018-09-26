@@ -5,6 +5,8 @@ class Kubetail < Formula
   sha256 "5e9034386e8f5e3b6c9473d14fd725f5791db2ffd1dd369deba8744ad86f35f2"
   head "https://github.com/johanhaleby/kubetail.git"
 
+  option "with-short-names", "link as \"ktail\" instead"
+  
   def install
     bin.install "kubetail" => build.with?("short-names") ? "ktail" : "kubetail"
     bash_completion.install "completion/kubetail.bash"
