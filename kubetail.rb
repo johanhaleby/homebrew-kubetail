@@ -1,8 +1,8 @@
 class Kubetail < Formula
   desc "Tail logs from multiple Kubernetes pods at the same time"
   homepage "https://github.com/johanhaleby/kubetail"
-  url "https://github.com/johanhaleby/kubetail/archive/1.6.11.tar.gz"
-  sha256 "275373a61ba374c01d0b22dd0f503ed9dd268d2f1d55514af77b85b1a3a886bc"
+  url "https://github.com/johanhaleby/kubetail/archive/1.6.12.tar.gz"
+  sha256 "b5f3229361d520cc2f2de4b24d309ac49582e126e271525c85dc4b0975d57e59"
   head "https://github.com/johanhaleby/kubetail.git"
 
   option "with-short-names", "link as \"kt\" instead"
